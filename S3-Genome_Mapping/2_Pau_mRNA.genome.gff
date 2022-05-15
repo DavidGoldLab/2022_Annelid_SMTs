@@ -1,0 +1,20 @@
+BOPM01000048.1	transdecoder	gene	153036	162570	.	-	.	ID=GENE.FX438716.1|Reverse_complement~~FX438716.1|Reverse_complement.p1;Name=ORF%20type%3A5prime_partial%20len%3A353%20%28%2B%29%2Cscore%3D456.13
+BOPM01000048.1	transdecoder	mRNA	153036	162570	.	-	.	ID=FX438716.1|Reverse_complement.p1;Parent=GENE.FX438716.1|Reverse_complement~~FX438716.1|Reverse_complement.p1;Name=ORF%20type%3A5prime_partial%20len%3A353%20%28%2B%29%2Cscore%3D456.13
+BOPM01000048.1	transdecoder	exon	162495	162570	.	-	.	ID=FX438716.1|Reverse_complement.p1.exon1;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	CDS	162495	162570	.	-	0	ID=cds.FX438716.1|Reverse_complement.p1;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	exon	161190	161199	.	-	.	ID=FX438716.1|Reverse_complement.p1.exon2;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	CDS	161190	161199	.	-	2	ID=cds.FX438716.1|Reverse_complement.p1;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	exon	161133	161141	.	-	.	ID=FX438716.1|Reverse_complement.p1.exon3;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	CDS	161133	161141	.	-	1	ID=cds.FX438716.1|Reverse_complement.p1;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	exon	156812	156971	.	-	.	ID=FX438716.1|Reverse_complement.p1.exon4;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	CDS	156812	156971	.	-	1	ID=cds.FX438716.1|Reverse_complement.p1;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	exon	155955	156167	.	-	.	ID=FX438716.1|Reverse_complement.p1.exon5;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	CDS	155955	156167	.	-	0	ID=cds.FX438716.1|Reverse_complement.p1;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	exon	154364	154479	.	-	.	ID=FX438716.1|Reverse_complement.p1.exon6;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	CDS	154364	154479	.	-	0	ID=cds.FX438716.1|Reverse_complement.p1;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	exon	153378	153832	.	-	.	ID=FX438716.1|Reverse_complement.p1.exon7;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	CDS	153378	153832	.	-	1	ID=cds.FX438716.1|Reverse_complement.p1;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	exon	153036	153087	.	-	.	ID=FX438716.1|Reverse_complement.p1.exon8;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	CDS	153068	153087	.	-	2	ID=cds.FX438716.1|Reverse_complement.p1;Parent=FX438716.1|Reverse_complement.p1
+BOPM01000048.1	transdecoder	three_prime_UTR	153036	153067	.	-	.	ID=FX438716.1|Reverse_complement.p1.utr3p1;Parent=FX438716.1|Reverse_complement.p1
+

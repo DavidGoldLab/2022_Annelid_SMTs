@@ -1,0 +1,61 @@
+####################################################################
+####################################################################
+# Check whether putative SMT transcripts from corals map to genomes
+####################################################################
+####################################################################
+
+############################
+# Map transcripts to genomes
+############################
+
+# Map Porites australiensis transcript (reverse complement) to genome
+
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/022/179/025/GCA_022179025.1_Paus_1.0/GCA_022179025.1_Paus_1.0_genomic.fna.gz
+gunzip GCA_022179025.1_Paus_1.0_genomic.fna.gz
+gmap_build -D ./ -d Pau GCA_022179025.1_Paus_1.0_genomic.fna
+gmap -D ./ -d Pau 0_Pau_mRNA.fasta -f gff3_match_cdna  > 1_Pau_SMT.gff3
+
+# Map Acropora digitifera transcript to genome
+
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/222/465/GCF_000222465.1_Adig_1.1/GCF_000222465.1_Adig_1.1_genomic.fna.gz
+gunzip GCF_000222465.1_Adig_1.1_genomic.fna.gz
+gmap_build -D ./ -d Adi 0_GCF_000222465.1_Adig_1.1_genomic.fna
+gmap -D ./ -d Adi 0_Adi_mRNA.fasta -f gff3_match_cdna > 1_Adi_SMT.gff3
+	# no hits
+	
+# Map Acropora millepora transcript to genome
+
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/013/753/865/GCF_013753865.1_Amil_v2.1/GCF_013753865.1_Amil_v2.1_genomic.fna.gz
+gunzip GCF_013753865.1_Amil_v2.1_genomic.fna.gz
+gmap_build -D ./ -d Ami 0_GCF_013753865.1_Amil_v2.1_genomic.fna
+gmap -D ./ -d Ami 0_Ami_mRNA.fasta -f gff3_match_cdna > 1_Ami_SMT.gff3
+	# no hits
+
+##########################################################################
+# generate a genome-based coding region annotation file with TransDecoder
+##########################################################################
+ 	# https://github.com/TransDecoder
+ 	
+mkdir temp
+cd temp
+
+TransDecoder.LongOrfs -t ../0_Pau_mRNA.fasta
+TransDecoder.Predict -t ../0_Pau_mRNA.fasta
+
+/Users/davidgold/Documents/bioinformatics/TransDecoder-TransDecoder-v5.5.0/util/cdna_alignment_orf_to_genome_orf.pl \
+     0_Pau_mRNA.fasta.transdecoder.gff3 \
+     ../1_Pau_SMT.gff3 \
+     ../0_Pau_mRNA.fasta > ../2_Pau_mRNA.genome.gff
+
+##########
+# Cleanup 
+##########
+
+cd ..
+rm -r temp
+rm -r Pau
+rm -r Adi
+rm -r Ami
+rm *.fna
+
+
