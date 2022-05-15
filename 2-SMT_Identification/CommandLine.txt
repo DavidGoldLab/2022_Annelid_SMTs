@@ -1,0 +1,259 @@
+########################
+########################
+# Prepare input dataset
+########################
+########################
+
+#Make an index for the file
+	samtools faidx 0_metazoa_pep.fasta
+
+#Extract reading frames, move output
+	TransDecoder.LongOrfs -t 0_metazoa_pep.fasta
+
+	cp ~/Desktop/Meta_SMT/05_Manuscript_rerun/0_metazoa_pep.fasta.transdecoder_dir/longest_orfs.pep ~/Desktop/Meta_SMT/05_Manuscript_rerun/metazoa_pep.fasta
+##Skipped since they're all amino acids already
+
+################################
+################################
+# Remove duplicates with CD-Hit
+################################
+################################
+
+# Requires CD-HIT (http://weizhong-lab.ucsd.edu/cd-hit/)
+
+# Renamed sequences in 0_metazoa_pep.fasta:
+	# Species name | Accession ID _ Coordinates from Transdecoder
+
+# create temp directory
+mkdir temp
+
+cd temp
+
+# Format results so each line is one sequence
+gsed s/"\(>\)\(.*\)"/"\1\2\t"/g ../0_metazoa_pep.fasta > tmp1
+tr -d '\n' < tmp1  > tmp2
+gsed 's/>/\n>/g' tmp2 > tmp3
+gsed -E 's/^([^|]*)|/\1\t/' <(sort tmp3) > 0_metazoa_pep.fasta
+rm tmp*
+
+# split into files by ID
+awk -F'\t' '!_[$1]++ { fn && close(fn)
+fn = $1 ".tmp"
+}
+{ print > fn } ' 0_metazoa_pep.fasta
+
+# reformat into fasta
+for i in *.tmp; do
+	gsed -E 's/^([^\t]*)\t/\1/;s/\t([^\t]*)$/\n\1/' $i > ${i%.tmp}.fasta;
+done
+
+for i in *.fasta; do
+	cd-hit -i $i -o ${i%.fasta}.cd-hit.txt -d 100 -c 0.90;
+done
+
+cat *.cd-hit.txt > ../1_metazoa_pep.vetted.fasta
+
+
+#CHRIS EDIT
+cp ~/Desktop/Meta_SMT/05_Manuscript_rerun/temp/1_metazoa_pep.vetted.fasta ~/Desktop/Meta_SMT/05_Manuscript_rerun/1_metazoa_pep.vetted.fasta
+
+
+cd ../
+rm -r temp
+
+################################
+################################
+# Identify protein domains
+################################
+################################
+
+# Requires HMMER (http://hmmer.org)
+
+brew install hmmer
+
+# Requires pfam_scan 
+# ftp://ftp.ebi.ac.uk/pub/databases/Pfam//Tools/PfamScan.tar.gz
+# pfam_scan can be installed with Conda. Add conda cask to homebrew:
+brew install anaconda --cask
+conda install -c bioconda pfam_scan
+
+#################################
+# Identify domains with pfam_scan 
+#################################
+
+mkdir Pfam
+cd Pfam
+
+# Install the Pfam database
+wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.dat.gz  
+gunzip Pfam-A.hmm.gz
+gunzip Pfam-A.hmm.dat.gz
+hmmpress Pfam-A.hmm
+cd ../
+
+# Run PfamScan
+pfam_scan.pl \
+-outfile 2_metazoa_pep.pfam_scan.txt \
+-fasta 1_metazoa_pep.vetted.fasta -dir ./Pfam/
+
+# Cleanup
+rm -r Pfam
+
+###############################
+###############################
+# Extract domains with SAMTOOLS
+###############################
+###############################
+
+#############################
+# Extract Methyltransf domain
+#############################
+
+grep '.* Methyltransf_\d* *' 2_metazoa_pep.Pfamscan_output.txt > tmp1
+# use squeeze flag (-s) in tr to replace all white spaces with a tab
+tr -s ' ' \\t < tmp1 > tmp2
+# extract envelope coordinates
+awk -v OFS='\t' '{print $1,$4,$5}' tmp2 > tmp3
+# Concatenate domains broken into multiple fragments 
+awk -F'\t' -v OFS='\t' '{x=$1;$1="";a[x]=a[x]$0}END{for(x in a)print x,a[x]}' tmp3 > tmp4
+tr -s '\t' \\t < tmp4 > tmp5
+# Extract name, first envelope coordinate, last envelope coordinate
+awk -v OFS='\t' '{print "\047"$1"\047"":"$2"-"$NF}' tmp5 > tmp6
+# Extract domains with samtools
+xargs samtools faidx --length 100000000 1_metazoa_pep.vetted.fasta < tmp6 > 3_Methyltransf_Domains.fasta
+rm tmp*
+
+#############################
+# Extract Sterol_MT_C domain
+#############################
+
+grep '.* Sterol_MT_C *' 2_metazoa_pep.Pfamscan_output.txt > tmp1
+# use squeeze flag (-s) in tr to replace all white spaces with a tab
+tr -s ' ' \\t < tmp1 > tmp2
+# extract envelope coordinates
+awk -v OFS='\t' '{print $1,$4,$5}' tmp2 > tmp3
+# Concatenate domains broken into multiple fragments 
+awk -F'\t' -v OFS='\t' '{x=$1;$1="";a[x]=a[x]$0}END{for(x in a)print x,a[x]}' tmp3 > tmp4
+tr -s '\t' \\t < tmp4 > tmp5
+# Extract name, first envelope coordinate, last envelope coordinate
+awk -v OFS='\t' '{print "\047"$1"\047"":"$2"-"$NF}' tmp5 > tmp6
+# Extract domains with samtools
+xargs samtools faidx --length 100000000 1_metazoa_pep.vetted.fasta < tmp6 > 3_Sterol_MT_C.fasta
+rm tmp*
+
+#####################################################
+#####################################################
+# Align domains and stitch together with FASconCAT-G
+#####################################################
+#####################################################
+
+######################################################
+# Remove domain coordinates from sequence identifiers
+######################################################
+
+sed 's/:.*$//' 3_Methyltransf_Domains.fasta > 3_Methyltransf_Domains.cleaned.fasta
+sed 's/:.*$//' 3_Sterol_MT_C.fasta > 3_Sterol_MT_C.cleaned.fasta
+
+###################
+# Align with MAAFT
+###################
+
+einsi 3_Methyltransf_Domains.cleaned.fasta > 4_Methyltransf_Domains.cleaned.maaft.fasta
+einsi 3_Sterol_MT_C.cleaned.fasta > 4_Sterol_MT_C.cleaned.maaft.fasta
+
+######################################
+# Combine alignments with FASconCAT-G
+#####################################
+
+mkdir temp
+cp 4* temp
+cd temp
+
+# Download Perl script and make it executable
+     ##Link broken? Used old version
+wget https://raw.githubusercontent.com/PatrickKueck/FASconCAT-G/master/FASconCAT-G_v1.05.pl
+chmod u+x FASconCAT-G_v1.05.pl
+
+# Run FASconCAT-G
+perl ./FASconCAT-G_v1.05.pl -s
+###Moved from earlier download - link not working anymore
+
+
+###############################################
+# Clean up poorly aligned regions with trimAl
+###############################################
+
+# Install trimAl
+brew install brewsci/bio/trimal
+
+trimal -in FcC_supermatrix.fas -gappyout -out 5_SMT.FcC_supermatrix.fas  ##CHRIS EDIT: save this in temp
+
+#############################################
+# Label sequences without Sterol_MT_C domain
+#############################################
+
+# Format results so each line is one sequence
+gsed s/"\(>\)\(.*\)"/"\1\2\t"/g 5_SMT.FcC_supermatrix.fas > tmp1
+tr -d '\n' < tmp1  > tmp2
+gsed 's/>/\n>/g' tmp2 > tmp3
+sort -u tmp3 > tmp4
+# Append "NoSMT" to sequences that end in X's
+gsed s/"\(>\)\(.*\)\(XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX$\)"/"\1NoSMT\|\2\3"/g tmp4 > tmp5
+# Remove top (empty) line
+tail -n +2 tmp4 > tmp6
+# Reformat into fasta file
+tr -s '\t' '\n' < tmp6 > ../6_SMT.FcC_supermatrix.annotated.fas  ##CHRIS EDIT: save up a level
+# Cleanup 
+rm tmp*
+
+###########################
+###########################
+# Create Tree with FastTree
+###########################
+###########################
+
+fasttree < 6_SMT.FcC_supermatrix.annotated.fas \
+> 7_SMT.FcC_supermatrix.annotated.fas
+
+##########################
+###########################
+# Reciprocal BLAST with Uniprot
+###########################
+###########################
+
+# Download Uniprot Swissprot dataset
+wget https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+gunzip uniprot_sprot.fasta.gz
+##Added extra SMT sequences to the fasta file per David's email on 12/08/21
+	#Accession numbers: XP_003387525.1, XP_004346937.1, ELU07827.1, CAF1633859.1
+##Also added XP_020604180.1 and CAF0879466.1, see David's slack 5/4/22	
+ 
+ 
+# Format as a BLAST database
+# Requires BLAST (can be installed with Homebrew)
+makeblastdb -in uniprot_sprot.fasta -dbtype prot -out uniprot_sprot
+ 
+# Blast query sequences against database for best BLAST hit
+blastp -query 1_metazoa_pep.vetted.fasta -db uniprot_sprot -outfmt 6 -evalue 10e-5 -max_target_seqs 1 -out UniProt_Output.txt
+
+############################################################
+# Extract vetted sequences for second round of tree building
+#############################################################
+
+# Create new file with Uniprot best hits appended to names (file: 7_SMT.FcC_supermatrix.annotated.Hand_Edited.fas)
+
+xargs samtools faidx 7_SMT.FcC_supermatrix.annotated.Hand_Edited.fas -n 1000 \
+< 8_Vetted.List.txt \
+> 9_SMT_Vetted.fas
+
+# Replace '|' with '__' in alignment (otherwise pipe character replaced in IQTree
+
+############################################
+# Second round of tree building with IQTree
+############################################
+	# Performed on UC Davis Peloton cluster
+
+iqtree -s 9_SMT_Vetted.fas  -alrt 1000 -bb 1000 -bnni -nt AUTO
+
+Mv 9_SMT_Vetted.fas.contree 9_SMT_Vetted.fas.contree.tree
