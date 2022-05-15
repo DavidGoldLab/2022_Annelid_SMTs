@@ -1,0 +1,282 @@
+#####################
+# Extract PDB models
+#####################
+
+tar  --strip-components=1 -xvzf Platynereis_smt2_S680367_results.tar.bz2 S680367_results/model1.pdb
+mv model1.pdb Pdu_SMT2.pdb
+
+tar  --strip-components=1 -xvzf Platynereis_smt1_S679321_results.tar.bz2 S679321_results/model1.pdb
+mv model1.pdb Pdu_SMT1.pdb
+
+tar  --strip-components=1 -xvzf ERG6_smt_S680375_results.tar.bz2 S680375_results/model1.pdb
+mv model1.pdb Sce_ERG6.pdb
+
+tar  --strip-components=1 -xvzf Capitella_smt_S680922_results.tar.bz2 S680922_results/model1.pdb
+mv model1.pdb Cte_SMT.pdb
+
+tar  --strip-components=1 -xvzf Arabidopsis_SMT2_S683633_results.tar.bz2 S683633_results/model1.pdb
+mv model1.pdb Ath_SMT2.pdb
+
+##########################
+# Visualize annelid SMTs
+##########################
+
+pymol
+
+# load files
+cmd.load("Cte_SMT.pdb")
+cmd.load("Pdu_SMT1.pdb")
+cmd.load("Pdu_SMT2.pdb")
+cmd.load("Sce_ERG6.pdb")
+cmd.load("Ath_SMT2.pdb")
+
+# Align proteins
+
+align Pdu_SMT2, Pdu_SMT1, cycles=50
+align Cte_SMT, Pdu_SMT2, cycles=50
+align Ath_SMT2, Pdu_SMT2, cycles=50
+align Sce_ERG6, Pdu_SMT2, cycles=50
+
+# Orient proteins
+set_view (\
+    -0.764521241,   -0.388756216,   -0.514160573,\
+    -0.589868963,    0.743563414,    0.314890653,\
+     0.259900481,    0.544033527,   -0.797789156,\
+     0.000000000,    0.000000000, -212.337570190,\
+    62.236598969,   60.509048462,   62.678836823,\
+   167.408554077,  257.266571045,  -20.000000000 )
+
+# Zoom to fit
+zoom complete=1
+
+# Adjust colors
+bg_color white
+# Color by domains
+color grey
+
+# Color each by conserved domains and export
+	# Envelope coordinates determined by PFAM
+	# Binding sites for EC 
+	
+# Prepare Cte_SMT
+hide cartoon, Pdu_SMT2
+hide cartoon, Pdu_SMT1
+hide cartoon, Ath_SMT2
+hide cartoon, Sce_ERG6
+color yellow, (resi 56-154)
+color purple, (resi 228-293)
+# color yellow, (resi 60,128,180,183)
+# Export image
+png Figure_3A-Cte_SMT, 0, 0, -1, ray=1, dpi=300
+
+# Prepare Pdu_SMT1
+hide cartoon, Cte_SMT
+show cartoon, Pdu_SMT1
+color grey
+color yellow, (resi 107-205)
+color purple, (resi 278-343)
+png Figure_3B-Pdu_SMT1, 0, 0, -1, ray=1, dpi=300
+
+# Prepare Pdu_SMT2
+hide cartoon, Pdu_SMT1
+show cartoon, Pdu_SMT2
+color grey
+color yellow, (resi 104-201)
+color purple, (resi 274-339)
+png Figure_3C-Pdu_SMT2, 0, 0, -1, ray=1, dpi=300
+
+# Prepare Sce_ERG6
+hide cartoon, Pdu_SMT2
+show cartoon, Sce_ERG6
+color grey
+color yellow, (resi 124-222)
+color purple, (resi 304-369)
+png Figure_3D-Sce_ERG6, 0, 0, -1, ray=1, dpi=300
+
+# Prepare Ath_SMT2
+hide cartoon, Sce_ERG6
+show cartoon, Ath_SMT2
+color grey
+color yellow, (resi 128-226)
+color purple, (resi 290-355)
+png Figure_3E-Ath_SMT2, 0, 0, -1, ray=1, dpi=300
+
+
+###########################
+# Align worms SMTs to ERG6
+###########################
+
+# Prepare Cte_SMT
+hide cartoon, Ath_SMT2
+show cartoon, Sce_ERG6
+show cartoon, Cte_SMT
+color grey
+# Compare Align vs Super functions
+align Sce_ERG6, Cte_SMT, cycles=50
+	# RMSD =    1.335
+super Sce_ERG6, Cte_SMT, cycles=50
+	# RMSD =    1.267
+import colorbyrmsd
+colorbyrmsd Cte_SMT, Sce_ERG6, doAlign=0, doPretty=1
+hide cartoon, Sce_ERG6
+# Orient protein
+set_view (\
+    -0.764521241,   -0.388756216,   -0.514160573,\
+    -0.589868963,    0.743563414,    0.314890653,\
+     0.259900481,    0.544033527,   -0.797789156,\
+     0.000000000,    0.000000000, -212.337570190,\
+    62.236598969,   60.509048462,   62.678836823,\
+   167.408554077,  257.266571045,  -20.000000000 )
+# Zoom to fit
+zoom complete=1
+# Export image
+png Figure_3E-Cte_SMT+Sce_ERG6 0, 0, -1, ray=1, dpi=300
+
+# Prepare Pdu_SMT1
+hide cartoon, Cte_SMT
+show cartoon, Sce_ERG6
+show cartoon, Pdu_SMT1
+color grey
+# Compare Align vs Super functions
+align Sce_ERG6, Pdu_SMT1, cycles=50
+	# RMSD =    1.172
+super Sce_ERG6, Pdu_SMT1, cycles=50
+	# RMSD =    1.114
+import colorbyrmsd
+colorbyrmsd Pdu_SMT1, Sce_ERG6, doAlign=0, doPretty=1
+hide cartoon, Sce_ERG6
+# Orient protein
+set_view (\
+    -0.764521241,   -0.388756216,   -0.514160573,\
+    -0.589868963,    0.743563414,    0.314890653,\
+     0.259900481,    0.544033527,   -0.797789156,\
+     0.000000000,    0.000000000, -212.337570190,\
+    62.236598969,   60.509048462,   62.678836823,\
+   167.408554077,  257.266571045,  -20.000000000 )
+# Zoom to fit
+zoom complete=1
+# Export image
+png Figure_3F-Pdu_SMT1+Sce_ERG6 0, 0, -1, ray=1, dpi=300
+
+# Prepare Pdu_SMT2
+hide cartoon, Pdu_SMT1
+show cartoon, Sce_ERG6
+show cartoon, Pdu_SMT2
+color grey
+# Compare Align vs Super functions
+align Sce_ERG6, Pdu_SMT2, cycles=50
+	# RMSD =    1.454
+super Sce_ERG6, Pdu_SMT2, cycles=50
+	# RMSD =    1.271
+import colorbyrmsd
+colorbyrmsd Pdu_SMT2, Sce_ERG6, doAlign=0, doPretty=1
+hide cartoon, Sce_ERG6
+# Orient protein
+set_view (\
+    -0.764521241,   -0.388756216,   -0.514160573,\
+    -0.589868963,    0.743563414,    0.314890653,\
+     0.259900481,    0.544033527,   -0.797789156,\
+     0.000000000,    0.000000000, -212.337570190,\
+    62.236598969,   60.509048462,   62.678836823,\
+   167.408554077,  257.266571045,  -20.000000000 )
+# Zoom to fit
+zoom complete=1
+# Export image
+png Figure_3G-Pdu_SMT2+Sce_ERG6 0, 0, -1, ray=1, dpi=300
+
+##############################
+# Align worms SMTs to AthSMT2
+##############################
+
+# Prepare Cte_SMT
+hide cartoon, Pdu_SMT2
+show cartoon, Ath_SMT2
+show cartoon, Cte_SMT
+color grey
+# Compare Align vs Super functions
+align Ath_SMT2, Cte_SMT, cycles=50
+	# RMSD =    1.131
+super Ath_SMT2, Cte_SMT, cycles=50
+	# RMSD =    1.350
+# Go with align function 
+align Ath_SMT2, Cte_SMT, cycles=50
+import colorbyrmsd
+colorbyrmsd Cte_SMT, Ath_SMT2, doAlign=0, doPretty=1
+hide cartoon, Ath_SMT2
+# Orient protein
+set_view (\
+    -0.764521241,   -0.388756216,   -0.514160573,\
+    -0.589868963,    0.743563414,    0.314890653,\
+     0.259900481,    0.544033527,   -0.797789156,\
+     0.000000000,    0.000000000, -212.337570190,\
+    62.236598969,   60.509048462,   62.678836823,\
+   167.408554077,  257.266571045,  -20.000000000 )
+# Zoom to fit
+zoom complete=1
+# Export image
+png Figure_3H-Cte_SMT+Ath_SMT2 0, 0, -1, ray=1, dpi=300
+
+# Prepare Pdu_SMT1
+hide cartoon, Cte_SMT
+show cartoon, Ath_SMT2
+show cartoon, Pdu_SMT1
+color grey
+# Compare Align vs Super functions
+align Ath_SMT2, Pdu_SMT1, cycles=50
+	# RMSD =    1.546
+super Ath_SMT2, Pdu_SMT1, cycles=50
+	# RMSD =    1.544
+import colorbyrmsd
+colorbyrmsd Pdu_SMT1, Ath_SMT2, doAlign=0, doPretty=1
+hide cartoon, Ath_SMT2
+# Orient protein
+set_view (\
+    -0.764521241,   -0.388756216,   -0.514160573,\
+    -0.589868963,    0.743563414,    0.314890653,\
+     0.259900481,    0.544033527,   -0.797789156,\
+     0.000000000,    0.000000000, -212.337570190,\
+    62.236598969,   60.509048462,   62.678836823,\
+   167.408554077,  257.266571045,  -20.000000000 )
+# Zoom to fit
+zoom complete=1
+# Export image
+png Figure_3I-Pdu_SMT1+Ath_SMT2 0, 0, -1, ray=1, dpi=300
+
+# Prepare Pdu_SMT2
+hide cartoon, Pdu_SMT1
+show cartoon, Ath_SMT2
+show cartoon, Pdu_SMT2
+color grey
+# Compare Align vs Super functions
+align Ath_SMT2, Pdu_SMT2, cycles=50
+	# RMSD =    1.118
+super Ath_SMT2, Pdu_SMT2, cycles=50
+	# RMSD =    1.020
+import colorbyrmsd
+colorbyrmsd Pdu_SMT2, Ath_SMT2, doAlign=0, doPretty=1
+hide cartoon, Ath_SMT2
+# Orient protein
+set_view (\
+    -0.764521241,   -0.388756216,   -0.514160573,\
+    -0.589868963,    0.743563414,    0.314890653,\
+     0.259900481,    0.544033527,   -0.797789156,\
+     0.000000000,    0.000000000, -212.337570190,\
+    62.236598969,   60.509048462,   62.678836823,\
+   167.408554077,  257.266571045,  -20.000000000 )
+# Zoom to fit
+zoom complete=1
+# Export image
+png Figure_3J-Pdu_SMT2+Ath_SMT2 0, 0, -1, ray=1, dpi=300
+
+###############################################
+# Calculate RMSD between Ath_SMT2 and Sce_ERG6
+###############################################
+
+hide cartoon, Pdu_SMT2
+show cartoon, Ath_SMT2
+show cartoon, Sce_ERG6
+
+align Sce_ERG6, Ath_SMT2, cycles=50
+	# RMSD = 2.412
+super Sce_ERG6, Ath_SMT2, cycles=50
+	# RMSD = 2.437
