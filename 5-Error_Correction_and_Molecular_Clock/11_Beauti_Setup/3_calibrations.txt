@@ -1,0 +1,3 @@
+1
+-U	Porites_lutea_Cnidaria_Anthozoa_GGER01071622.1_p1_Amphimedon-XP_003387525.1	Galaxea_fascicularis_Cnidaria_Anthozoa_GFAZ01104046.1_p1_Orbicella-XP_020604180.1	448	520
+
