@@ -1,0 +1,6 @@
+# BEAST v1.10.4 Prerelease #bc6cbd9
+# Generated Wed May 11 02:53:27 PDT 2022 [seed=1652262791455]
+# -window -working -options
+# keywords: discretized_branch_rates
+state	joint	prior	likelihood	treeModel.rootHeight	treeLength	tmrca(2_Fungi_Crown)	tmrca(2_Coccolithophore_Crown)	tmrca(2_Embryophyta)	tmrca(2_Hesionoidea)	tmrca(2_Petrosiidae)	tmrca(2_Rotaria1_Crown)	tmrca(2_Rotaria2_Crown)	tmrca(2_Sabellida)	tmrca(2_Scleractinia)	tmrca(2-Annelida)	yule.birthRate	alpha	ucld.mean	ucld.stdev	meanRate	coefficientOfVariation	covariance	treeLikelihood	branchRates	speciation
+0	-137659.49918423442	-110075.35354238765	-27584.14564184676	1854.7735634	36309.026741859954	440.20162270000014	225.542281	801.1606457	458.9624300999999	644.264028	280.42365259999997	281.4752318999999	335.35538707	644.264028	799.833167	2.0	0.5	1.0	0.3333333333333333	1.034603616984159	0.3165518701840816	-0.10640115781745764	-27584.14564184676	-1135.5962902304666	-72544.57998716066

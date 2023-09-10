@@ -1,0 +1,227 @@
+#NEXUS
+
+Begin taxa;
+	Dimensions ntax=107;
+	Taxlabels
+		'Adineta_ricciae_Rotifera_Bdelloidea_CAF0720147.1_Rotaria-CAF1633859.1'
+		'Adineta_ricciae_Rotifera_Bdelloidea_CAF0745749.1_Adineta-CAF0879466.1'
+		'Adineta_ricciae_Rotifera_Eurotatoria_HE709170.1_p1_Adineta-CAF0879466.1'
+		'Adineta_steineri_Rotifera_Bdelloidea_CAF0863447.1_Adineta-CAF0879466.1'
+		'Adineta_steineri_Rotifera_Bdelloidea_CAF0879466.1_Adineta-CAF0879466.1'
+		'Adineta_steineri_Rotifera_Bdelloidea_CAF0954912.1_Rotaria-CAF1633859.1'
+		'Adineta_vaga_Rotifera_Bdelloidea_UJR08966.1_Adineta-CAF0879466.1'
+		'Adineta_vaga_Rotifera_Bdelloidea_UJR21766.1_Rotaria-CAF1633859.1'
+		'Adineta_vaga_Rotifera_Bdelloidea_UJR27730.1_Adineta-CAF0879466.1'
+		'Adineta_vaga_Rotifera_Bdelloidea_UJR38736.1_Adineta-CAF0879466.1'
+		'Agaricia_lamarcki_Cnidaria_Anthozoa_GGLC03100559.1_p1_Orbicella-XP_020604180.1'
+		'Alitta_virens_Annelida_Polychaeta_GINI01005303.1_p1_Capsaspora-XP_004346937.1'
+		'Alitta_virens_Annelida_Polychaeta_GINI01069748.1_p1_Capitella-ELU07827.1'
+		'Alitta_virens_Annelida_Polychaeta_GINI01095864.1_p1_Capitella-ELU07827.1'
+		'Amphimedon_queenslandica_Porifera_Demospongiae_XP_003387525.1_Amphimedon-XP_003387525.1'
+		'Amynthas_gracilis_Annelida_Clitellata_GIKF01022106.1_p2_Capitella-ELU07827.1'
+		'Aplysina_aerophoba_Porifera_Demospongiae_HANI01212487.1_p1_Amphimedon-XP_003387525.1'
+		'Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_001078579.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH'
+		'Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_173458.1_OUTGROUP_sp_Q39227_SMT2_ARATH'
+		'Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_177736.1_OUTGROUP_sp_Q94JS4_SMT3B_ARATH'
+		'Astroides_calycularis_Cnidaria_Anthozoa_GIRZ01004252.1_p1_Orbicella-XP_020604180.1'
+		'Aureococcus_anophagefferens_Pelagophyceae_Pelagophyceae_XP_009034460.1_OUTGROUP_Capsaspora-XP_004346937.1'
+		'Aureococcus_anophagefferens_Pelagophyceae_Pelagophyceae_XP_009037888.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH'
+		'Capitella_teleta_Annelida_Polychaeta_ELU07827.1_Capitella-ELU07827.1'
+		'Chlamydomonas_reinhardtii_Chlorophyta_Chlorophyceae_XP_042918289.1_OUTGROUP_sp_Q94JS4_SMT3B_ARATH'
+		'Cymbastela_stipitata_Porifera_Demospongiae_GHWA01019168.1_p1_Amphimedon-XP_003387525.1'
+		'Cymbastela_stipitata_Porifera_Demospongiae_GHWA01019169.1_p1_Amphimedon-XP_003387525.1'
+		'Cyphastrea_serailia_Cnidaria_Anthozoa_GETH01048109.1_p1_Orbicella-XP_020604180.1_No_SMT'
+		'Didymodactylos_carnosus_Rotifera_Bdelloidea_CAF0954097.1_Adineta-CAF0879466.1'
+		'Dysidea_avara_Porifera_Demospongiae_HANJ01129280.1_p1_Amphimedon-XP_003387525.1'
+		'Eisenia_fetida_Annelida_Clitellata_GIKG01031241.1_p2_Capitella-ELU07827.1'
+		'Eisenia_fetida_Annelida_Clitellata_GIKG01135343.1_p1_Capitella-ELU07827.1'
+		'Emiliania_huxleyi_Haptista_Haptophyta_XP_005767411.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH'
+		'Enchytraeus_albidus_Annelida_Polychaeta_GJSG01022432.1_p1_Capitella-ELU07827.1'
+		'Enchytraeus_crypticus_Annelida_Clitellata_GALF01010111.1_p1_Capitella-ELU07827.1'
+		'Favites_colemani_Cnidaria_Anthozoa_GIVN01046627.1_p1_Orbicella-XP_020604180.1'
+		'Galaxea_fascicularis_Cnidaria_Anthozoa_GFAZ01104046.1_p1_Orbicella-XP_020604180.1'
+		'Glossoscolex_paulistus_Annelida_Clitellata_GBIL01031091.1_p1_Capitella-ELU07827.1'
+		'Glossoscolex_paulistus_Annelida_Clitellata_GBIL01037864.1_p1_Capitella-ELU07827.1'
+		'Grammatophora_oceanica_Ochrophyta_Bacillariophyceae_HBGK01020065.1.p1_OUTGROUP_sp_Q9LM02_SMT1_ARATH'
+		'Guillardia_theta_Cryptophyceae_Cryptophyceae_XP_005841951.1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ'
+		'Haliclona_tubifera_Porifera_Demospongiae_GFAV01007619.1_p1_Amphimedon-XP_003387525.1'
+		'Halisarca_caerulea_Porifera_Demospongiae_GFSI01014458.1_p1_Amphimedon-XP_003387525.1'
+		'Halisarca_caerulea_Porifera_Demospongiae_GFTQ01234321.1_p1_Amphimedon-XP_003387525.1'
+		'Halisarca_dujardinii_Porifera_Demospongiae_GIFI01118229.1_p1_Amphimedon-XP_003387525.1'
+		'Heterocapsa_rotundata_Myzozoa_Dinophyceae_HBLO01013759.1.p2_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ'
+		'Heterocapsa_rotundata_Myzozoa_Dinophyceae_HBMF01019534.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ'
+		'Karenia_mikimotoi_Myzozoa_Dinophyceae_GHKS01101508.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ'
+		'Lamellibrachia_luymesi_Annelida_Polychaeta_FUN_033246-T1_Capitella-ELU07827.1'
+		'Lamellibrachia_satsuma_Annelida_Polychaeta_KAI0241948.1_Capitella-ELU07827.1'
+		'Lumbriculus_variegatus_Annelida_Polychaeta_GIWA01114918.1_p1_Capitella-ELU07827.1'
+		'Lumbricus_castaneus_Annelida_Clitellata_GGRB01015146.1_p1_Capitella-ELU07827.1'
+		'Lumbricus_rubellus_Annelida_Clitellata_GIKI01063526.1_p1_Capitella-ELU07827.1'
+		'Monosiga_brevicollis_Choanoflagellata_Choanoflagellata_XP_001748534.1_OUTGROUP_Capsaspora-XP_004346937.1'
+		'Neopetrosia_compacta_Porifera_Demospongiae_GIYW01007509.1_p1_Amphimedon-XP_003387525.1'
+		'Neopetrosia_compacta_Porifera_Demospongiae_GIYW01054291.1_p1_Amphimedon-XP_003387525.1'
+		'Odontella_aurita_Bacillariophyta_Coscinodiscophyceae_GHBW01054489.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ'
+		'Olavius_algarvensis_Annelida_Clitellata_HACZ01051716.1_p1_Capitella-ELU07827.1_No_SMT'
+		'Ophryotrocha_diadema_Annelida_Polychaeta_GENQ01004874.1_p1_Capitella-ELU07827.1'
+		'Orbicella_faveolata_Cnidaria_Anthozoa_XP_020604180.1_Orbicella-XP_020604180.1_No_SMT'
+		'Paraescarpia_echinospica_Annelida_Polychaeta_GHDM01076229.1_p1_Capitella-ELU07827.1'
+		'Perinereis_aibuhitensis_Annelida_Polychaeta_GDAF01010172.1_p1_Capsaspora-XP_004346937.1'
+		'Perinereis_aibuhitensis_Annelida_Polychaeta_GDAF01019697.1_p1_Capitella-ELU07827.1'
+		'Physcomitrium_patens_Streptophyta_Bryopsida_XP_024395494.1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ'
+		'Physcomitrium_patens_Streptophyta_Bryopsida_XP_024401461.1_OUTGROUP_sp_Q39227_SMT2_ARATH'
+		'Platynereis_dumerilii_Annelida_Polychaeta_HALR01229039.1_p1_Capitella-ELU07827.1'
+		'Platynereis_dumerilii_Annelida_Polychaeta_HALR01261698.1_p1_Capitella-ELU07827.1'
+		'Porites_astreoides_Cnidaria_Anthozoa_GEHP01154325.1_p1_Orbicella-XP_020604180.1'
+		'Porites_australiensis_Cnidaria_Anthozoa_FX438716.1_p1_Orbicella-XP_020604180.1'
+		'Puccinia_graminis_Basidiomycota_Pucciniomycetes_XP_003321161.1_OUTGROUP_sp_O14321_ERG6_SCHPO'
+		'Puccinia_graminis_Basidiomycota_Pucciniomycetes_XP_003335809.1_OUTGROUP_sp_Q6CYB3_ERG6_KLULA'
+		'Pygospio_elegans_Annelida_Polychaeta_GFPL01001539.1_p1_Capitella-ELU07827.1'
+		'Romanchella_perrieri_Annelida_Polychaeta_HBVW01010218.1_p1_Capitella-ELU07827.1'
+		'Rotaria_magnacalcarata_Rotifera_Bdelloidea_CAF0976128.1_Rotaria-CAF1633859.1'
+		'Rotaria_magnacalcarata_Rotifera_Eurotatoria_GDRE01028107.1_p1_Adineta-CAF0879466.1'
+		'Rotaria_socialis_Rotifera_Bdelloidea_CAF3083896.1_Adineta-CAF0879466.1'
+		'Rotaria_socialis_Rotifera_Eurotatoria_GDRD01030257.1_p1_Rotaria-CAF1633859.1'
+		'Rotaria_sordida_Rotifera_Bdelloidea_CAF0735460.1_Adineta-CAF0879466.1'
+		'Rotaria_sordida_Rotifera_Bdelloidea_CAF0738991.1_Adineta-CAF0879466.1'
+		'Rotaria_sordida_Rotifera_Bdelloidea_CAF0741383.1_Adineta-CAF0879466.1'
+		'Rotaria_sordida_Rotifera_Bdelloidea_CAF0946149.1_Adineta-CAF0879466.1'
+		'Rotaria_sordida_Rotifera_Bdelloidea_CAF1085230.1_Adineta-CAF0879466.1'
+		'Rotaria_sordida_Rotifera_Bdelloidea_CAF1125665.1_Rotaria-CAF1633859.1'
+		'Rotaria_sordida_Rotifera_Bdelloidea_CAF1191339.1_Adineta-CAF0879466.1'
+		'Rotaria_sordida_Rotifera_Eurotatoria_GDRH01034451.1_p1_Adineta-CAF0879466.1'
+		'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF0831015.1_Adineta-CAF0879466.1'
+		'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1093334.1_Adineta-CAF0879466.1_No_SMT'
+		'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1185023.1_Adineta-CAF0879466.1'
+		'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1249985.1_Adineta-CAF0879466.1'
+		'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF4849145.1_Rotaria-CAF1633859.1'
+		'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF4985574.1_Rotaria-CAF1633859.1'
+		'Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2421095.1_Adineta-CAF0879466.1'
+		'Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2875610.1_Adineta-CAF0879466.1'
+		'Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2909852.1_Rotaria-CAF1633859.1'
+		'Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF3020934.1_Adineta-CAF0879466.1'
+		'Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF3269535.1_Adineta-CAF0879466.1'
+		'Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01008626.1_p1_Rotaria-CAF1633859.1'
+		'Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01047653.1_p1_Adineta-CAF0879466.1'
+		'Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01047656.1_p1_Adineta-CAF0879466.1_No_SMT'
+		'Saccharomyces_cerevisiae_Ascomycota_Saccharomycetes_NP_013706.1_OUTGROUP_sp_P25087_ERG6_YEAST'
+		'Siderastrea_siderea_Cnidaria_Anthozoa_GIYO011042706.1_p1_Orbicella-XP_020604180.1'
+		'Spirobranchus_lamarcki_Annelida_Polychaeta_GGGS01270992.1_p1_Capitella-ELU07827.1'
+		'Symbiodinium_cladeA_Myzozoa_Dinophyceae_HBSZ01069737.1.p1_OUTGROUP_sp_Q9LM02_SMT1_ARATH'
+		'Symbiodinium_cladeD_Myzozoa_Dinophyceae_HBTB01063121.1.p3_OUTGROUP_Capsaspora-XP_004346937.1'
+		'Thalassiosira_pseudonana_Bacillariophyta_Coscinodiscophyceae_XP_002287743.1_OUTGROUP_Capsaspora-XP_004346937.1'
+		'Thalassiosira_pseudonana_Bacillariophyta_Coscinodiscophyceae_XP_002292358.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH'
+		'Volvox_carteri_Chlorophyta_Chlorophyceae_XP_002948023.1_OUTGROUP_sp_H2E7T5_SQMT1_BOTBR'
+		;
+End;
+
+Begin trees;
+[keywords: discretized_branch_rates]
+	Translate
+		1 'Adineta_ricciae_Rotifera_Bdelloidea_CAF0720147.1_Rotaria-CAF1633859.1',
+		2 'Adineta_ricciae_Rotifera_Bdelloidea_CAF0745749.1_Adineta-CAF0879466.1',
+		3 'Adineta_ricciae_Rotifera_Eurotatoria_HE709170.1_p1_Adineta-CAF0879466.1',
+		4 'Adineta_steineri_Rotifera_Bdelloidea_CAF0863447.1_Adineta-CAF0879466.1',
+		5 'Adineta_steineri_Rotifera_Bdelloidea_CAF0879466.1_Adineta-CAF0879466.1',
+		6 'Adineta_steineri_Rotifera_Bdelloidea_CAF0954912.1_Rotaria-CAF1633859.1',
+		7 'Adineta_vaga_Rotifera_Bdelloidea_UJR08966.1_Adineta-CAF0879466.1',
+		8 'Adineta_vaga_Rotifera_Bdelloidea_UJR21766.1_Rotaria-CAF1633859.1',
+		9 'Adineta_vaga_Rotifera_Bdelloidea_UJR27730.1_Adineta-CAF0879466.1',
+		10 'Adineta_vaga_Rotifera_Bdelloidea_UJR38736.1_Adineta-CAF0879466.1',
+		11 'Agaricia_lamarcki_Cnidaria_Anthozoa_GGLC03100559.1_p1_Orbicella-XP_020604180.1',
+		12 'Alitta_virens_Annelida_Polychaeta_GINI01005303.1_p1_Capsaspora-XP_004346937.1',
+		13 'Alitta_virens_Annelida_Polychaeta_GINI01069748.1_p1_Capitella-ELU07827.1',
+		14 'Alitta_virens_Annelida_Polychaeta_GINI01095864.1_p1_Capitella-ELU07827.1',
+		15 'Amphimedon_queenslandica_Porifera_Demospongiae_XP_003387525.1_Amphimedon-XP_003387525.1',
+		16 'Amynthas_gracilis_Annelida_Clitellata_GIKF01022106.1_p2_Capitella-ELU07827.1',
+		17 'Aplysina_aerophoba_Porifera_Demospongiae_HANI01212487.1_p1_Amphimedon-XP_003387525.1',
+		18 'Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_001078579.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH',
+		19 'Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_173458.1_OUTGROUP_sp_Q39227_SMT2_ARATH',
+		20 'Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_177736.1_OUTGROUP_sp_Q94JS4_SMT3B_ARATH',
+		21 'Astroides_calycularis_Cnidaria_Anthozoa_GIRZ01004252.1_p1_Orbicella-XP_020604180.1',
+		22 'Aureococcus_anophagefferens_Pelagophyceae_Pelagophyceae_XP_009034460.1_OUTGROUP_Capsaspora-XP_004346937.1',
+		23 'Aureococcus_anophagefferens_Pelagophyceae_Pelagophyceae_XP_009037888.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH',
+		24 'Capitella_teleta_Annelida_Polychaeta_ELU07827.1_Capitella-ELU07827.1',
+		25 'Chlamydomonas_reinhardtii_Chlorophyta_Chlorophyceae_XP_042918289.1_OUTGROUP_sp_Q94JS4_SMT3B_ARATH',
+		26 'Cymbastela_stipitata_Porifera_Demospongiae_GHWA01019168.1_p1_Amphimedon-XP_003387525.1',
+		27 'Cymbastela_stipitata_Porifera_Demospongiae_GHWA01019169.1_p1_Amphimedon-XP_003387525.1',
+		28 'Cyphastrea_serailia_Cnidaria_Anthozoa_GETH01048109.1_p1_Orbicella-XP_020604180.1_No_SMT',
+		29 'Didymodactylos_carnosus_Rotifera_Bdelloidea_CAF0954097.1_Adineta-CAF0879466.1',
+		30 'Dysidea_avara_Porifera_Demospongiae_HANJ01129280.1_p1_Amphimedon-XP_003387525.1',
+		31 'Eisenia_fetida_Annelida_Clitellata_GIKG01031241.1_p2_Capitella-ELU07827.1',
+		32 'Eisenia_fetida_Annelida_Clitellata_GIKG01135343.1_p1_Capitella-ELU07827.1',
+		33 'Emiliania_huxleyi_Haptista_Haptophyta_XP_005767411.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH',
+		34 'Enchytraeus_albidus_Annelida_Polychaeta_GJSG01022432.1_p1_Capitella-ELU07827.1',
+		35 'Enchytraeus_crypticus_Annelida_Clitellata_GALF01010111.1_p1_Capitella-ELU07827.1',
+		36 'Favites_colemani_Cnidaria_Anthozoa_GIVN01046627.1_p1_Orbicella-XP_020604180.1',
+		37 'Galaxea_fascicularis_Cnidaria_Anthozoa_GFAZ01104046.1_p1_Orbicella-XP_020604180.1',
+		38 'Glossoscolex_paulistus_Annelida_Clitellata_GBIL01031091.1_p1_Capitella-ELU07827.1',
+		39 'Glossoscolex_paulistus_Annelida_Clitellata_GBIL01037864.1_p1_Capitella-ELU07827.1',
+		40 'Grammatophora_oceanica_Ochrophyta_Bacillariophyceae_HBGK01020065.1.p1_OUTGROUP_sp_Q9LM02_SMT1_ARATH',
+		41 'Guillardia_theta_Cryptophyceae_Cryptophyceae_XP_005841951.1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ',
+		42 'Haliclona_tubifera_Porifera_Demospongiae_GFAV01007619.1_p1_Amphimedon-XP_003387525.1',
+		43 'Halisarca_caerulea_Porifera_Demospongiae_GFSI01014458.1_p1_Amphimedon-XP_003387525.1',
+		44 'Halisarca_caerulea_Porifera_Demospongiae_GFTQ01234321.1_p1_Amphimedon-XP_003387525.1',
+		45 'Halisarca_dujardinii_Porifera_Demospongiae_GIFI01118229.1_p1_Amphimedon-XP_003387525.1',
+		46 'Heterocapsa_rotundata_Myzozoa_Dinophyceae_HBLO01013759.1.p2_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ',
+		47 'Heterocapsa_rotundata_Myzozoa_Dinophyceae_HBMF01019534.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ',
+		48 'Karenia_mikimotoi_Myzozoa_Dinophyceae_GHKS01101508.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ',
+		49 'Lamellibrachia_luymesi_Annelida_Polychaeta_FUN_033246-T1_Capitella-ELU07827.1',
+		50 'Lamellibrachia_satsuma_Annelida_Polychaeta_KAI0241948.1_Capitella-ELU07827.1',
+		51 'Lumbriculus_variegatus_Annelida_Polychaeta_GIWA01114918.1_p1_Capitella-ELU07827.1',
+		52 'Lumbricus_castaneus_Annelida_Clitellata_GGRB01015146.1_p1_Capitella-ELU07827.1',
+		53 'Lumbricus_rubellus_Annelida_Clitellata_GIKI01063526.1_p1_Capitella-ELU07827.1',
+		54 'Monosiga_brevicollis_Choanoflagellata_Choanoflagellata_XP_001748534.1_OUTGROUP_Capsaspora-XP_004346937.1',
+		55 'Neopetrosia_compacta_Porifera_Demospongiae_GIYW01007509.1_p1_Amphimedon-XP_003387525.1',
+		56 'Neopetrosia_compacta_Porifera_Demospongiae_GIYW01054291.1_p1_Amphimedon-XP_003387525.1',
+		57 'Odontella_aurita_Bacillariophyta_Coscinodiscophyceae_GHBW01054489.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ',
+		58 'Olavius_algarvensis_Annelida_Clitellata_HACZ01051716.1_p1_Capitella-ELU07827.1_No_SMT',
+		59 'Ophryotrocha_diadema_Annelida_Polychaeta_GENQ01004874.1_p1_Capitella-ELU07827.1',
+		60 'Orbicella_faveolata_Cnidaria_Anthozoa_XP_020604180.1_Orbicella-XP_020604180.1_No_SMT',
+		61 'Paraescarpia_echinospica_Annelida_Polychaeta_GHDM01076229.1_p1_Capitella-ELU07827.1',
+		62 'Perinereis_aibuhitensis_Annelida_Polychaeta_GDAF01010172.1_p1_Capsaspora-XP_004346937.1',
+		63 'Perinereis_aibuhitensis_Annelida_Polychaeta_GDAF01019697.1_p1_Capitella-ELU07827.1',
+		64 'Physcomitrium_patens_Streptophyta_Bryopsida_XP_024395494.1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ',
+		65 'Physcomitrium_patens_Streptophyta_Bryopsida_XP_024401461.1_OUTGROUP_sp_Q39227_SMT2_ARATH',
+		66 'Platynereis_dumerilii_Annelida_Polychaeta_HALR01229039.1_p1_Capitella-ELU07827.1',
+		67 'Platynereis_dumerilii_Annelida_Polychaeta_HALR01261698.1_p1_Capitella-ELU07827.1',
+		68 'Porites_astreoides_Cnidaria_Anthozoa_GEHP01154325.1_p1_Orbicella-XP_020604180.1',
+		69 'Porites_australiensis_Cnidaria_Anthozoa_FX438716.1_p1_Orbicella-XP_020604180.1',
+		70 'Puccinia_graminis_Basidiomycota_Pucciniomycetes_XP_003321161.1_OUTGROUP_sp_O14321_ERG6_SCHPO',
+		71 'Puccinia_graminis_Basidiomycota_Pucciniomycetes_XP_003335809.1_OUTGROUP_sp_Q6CYB3_ERG6_KLULA',
+		72 'Pygospio_elegans_Annelida_Polychaeta_GFPL01001539.1_p1_Capitella-ELU07827.1',
+		73 'Romanchella_perrieri_Annelida_Polychaeta_HBVW01010218.1_p1_Capitella-ELU07827.1',
+		74 'Rotaria_magnacalcarata_Rotifera_Bdelloidea_CAF0976128.1_Rotaria-CAF1633859.1',
+		75 'Rotaria_magnacalcarata_Rotifera_Eurotatoria_GDRE01028107.1_p1_Adineta-CAF0879466.1',
+		76 'Rotaria_socialis_Rotifera_Bdelloidea_CAF3083896.1_Adineta-CAF0879466.1',
+		77 'Rotaria_socialis_Rotifera_Eurotatoria_GDRD01030257.1_p1_Rotaria-CAF1633859.1',
+		78 'Rotaria_sordida_Rotifera_Bdelloidea_CAF0735460.1_Adineta-CAF0879466.1',
+		79 'Rotaria_sordida_Rotifera_Bdelloidea_CAF0738991.1_Adineta-CAF0879466.1',
+		80 'Rotaria_sordida_Rotifera_Bdelloidea_CAF0741383.1_Adineta-CAF0879466.1',
+		81 'Rotaria_sordida_Rotifera_Bdelloidea_CAF0946149.1_Adineta-CAF0879466.1',
+		82 'Rotaria_sordida_Rotifera_Bdelloidea_CAF1085230.1_Adineta-CAF0879466.1',
+		83 'Rotaria_sordida_Rotifera_Bdelloidea_CAF1125665.1_Rotaria-CAF1633859.1',
+		84 'Rotaria_sordida_Rotifera_Bdelloidea_CAF1191339.1_Adineta-CAF0879466.1',
+		85 'Rotaria_sordida_Rotifera_Eurotatoria_GDRH01034451.1_p1_Adineta-CAF0879466.1',
+		86 'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF0831015.1_Adineta-CAF0879466.1',
+		87 'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1093334.1_Adineta-CAF0879466.1_No_SMT',
+		88 'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1185023.1_Adineta-CAF0879466.1',
+		89 'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1249985.1_Adineta-CAF0879466.1',
+		90 'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF4849145.1_Rotaria-CAF1633859.1',
+		91 'Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF4985574.1_Rotaria-CAF1633859.1',
+		92 'Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2421095.1_Adineta-CAF0879466.1',
+		93 'Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2875610.1_Adineta-CAF0879466.1',
+		94 'Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2909852.1_Rotaria-CAF1633859.1',
+		95 'Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF3020934.1_Adineta-CAF0879466.1',
+		96 'Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF3269535.1_Adineta-CAF0879466.1',
+		97 'Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01008626.1_p1_Rotaria-CAF1633859.1',
+		98 'Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01047653.1_p1_Adineta-CAF0879466.1',
+		99 'Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01047656.1_p1_Adineta-CAF0879466.1_No_SMT',
+		100 'Saccharomyces_cerevisiae_Ascomycota_Saccharomycetes_NP_013706.1_OUTGROUP_sp_P25087_ERG6_YEAST',
+		101 'Siderastrea_siderea_Cnidaria_Anthozoa_GIYO011042706.1_p1_Orbicella-XP_020604180.1',
+		102 'Spirobranchus_lamarcki_Annelida_Polychaeta_GGGS01270992.1_p1_Capitella-ELU07827.1',
+		103 'Symbiodinium_cladeA_Myzozoa_Dinophyceae_HBSZ01069737.1.p1_OUTGROUP_sp_Q9LM02_SMT1_ARATH',
+		104 'Symbiodinium_cladeD_Myzozoa_Dinophyceae_HBTB01063121.1.p3_OUTGROUP_Capsaspora-XP_004346937.1',
+		105 'Thalassiosira_pseudonana_Bacillariophyta_Coscinodiscophyceae_XP_002287743.1_OUTGROUP_Capsaspora-XP_004346937.1',
+		106 'Thalassiosira_pseudonana_Bacillariophyta_Coscinodiscophyceae_XP_002292358.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH',
+		107 'Volvox_carteri_Chlorophyta_Chlorophyceae_XP_002948023.1_OUTGROUP_sp_H2E7T5_SQMT1_BOTBR'
+		;
+tree STATE_0 [&lnP=-137659.49918423442,joint=-137659.49918423442] = [&R] ((((((46:[&rate=1.1560763967362104]288.68348790000005,103:[&rate=0.8520123941636126]288.6834873):[&rate=1.4222001736576002]286.7762917,23:[&rate=1.1154129600663671]575.459779):[&rate=0.7339857687573579]289.8453379,(104:[&rate=0.7566174706015534]432.12846109999987,57:[&rate=1.178039007111558]432.12846109999987):[&rate=0.9689357808886264]433.1766559):[&rate=1.069333009286475]287.4440989,(((20:[&rate=0.7529048609886567]225.71385209999994,19:[&rate=0.6219814962104161]225.71385209999994):[&rate=1.3781126495332612]222.87290970000004,65:[&rate=0.8589209048839473]448.5867618):[&rate=0.7892240445475585]352.5738834000001,(107:[&rate=0.6380485640647268]400.7866961,25:[&rate=1.3220388458048022]400.7866961):[&rate=1.575913607126489]400.3739490999999):[&rate=0.9040867723439322]351.5885707):[&rate=1.267068611891558]351.26095710000004,(((33:[&rate=1.3135946567856247]225.54228050000006,41:[&rate=0.7892240445475585]225.54228050000006):[&rate=0.6481625884644129]425.38707610000006,((47:[&rate=0.6163429546641077]218.00811040000008,48:[&rate=0.9916276565822592]218.00811040000008):[&rate=1.7830966566946553]215.57658979999997,((105:[&rate=1.1953701544949409]144.96507730000008,22:[&rate=1.6458894392572057]144.96507730000008):[&rate=0.8208455563011916]144.43278499999997,(106:[&rate=1.1252181379028556]145.45407810000006,40:[&rate=1.1724319720582863]145.45407810000006):[&rate=0.6380485640647268]143.94378419999998):[&rate=1.1724319720582863]144.1868379):[&rate=1.1953701544949409]217.34465640000008):[&rate=1.9781083505137562]427.46668160000013,(64:[&rate=1.1614535972720352]538.8913284,18:[&rate=0.8520123941636126]538.8913284):[&rate=1.2973426606225393]539.5047097000001):[&rate=0.9432372828895487]425.6141347999999):[&rate=0.7748910521383531]350.7633899,(((71:[&rate=1.4602259881278061]219.7310720999999,70:[&rate=1.1953701544949409]219.7310720999999):[&rate=0.8692908646102617]220.4705495999999,100:[&rate=1.2326724949924186]440.20162170000003):[&rate=0.7103009194241096]1205.141435,(((((42:[&rate=1.0520575346958447]34.67855764000001,15:[&rate=1.6458894392572057]34.67855764000001):[&rate=0.6672536911862194]33.66635513999995,(56:[&rate=0.706223982298349]34.08900291000009,55:[&rate=1.1560763967362104]34.08900291000009):[&rate=0.5710972961525898]34.255909859999974):[&rate=0.9615162693915588]575.9191148,((((68:[&rate=1.4105509371677019]123.5807382999999,69:[&rate=0.9252871330712205]123.5807382999999):[&rate=0.6380485640647268]126.68228440000007,21:[&rate=1.2392845328063673]250.26302269999996):[&rate=0.6163429546641077]123.54597990000002,101:[&rate=0.7529048609886567]373.8090024999999):[&rate=1.3135946567856247]122.91107979999992,((((28:[&rate=1.0964303736448149]100.5366813999999,60:[&rate=0.9324321083889269]100.5366813999999):[&rate=0.8173630752400248]98.8351313600001,36:[&rate=0.9689357808886264]199.37181269999996):[&rate=0.7892240445475585]99.69601501000011,11:[&rate=0.8312624091902218]299.06782769999995):[&rate=1.274383230474596]99.65121640999996,37:[&rate=0.8623760738149011]398.71904419999987):[&rate=1.1724319720582863]98.00103813999999):[&rate=0.632822310579105]147.54394520000005):[&rate=0.9689357808886264]578.4091066000001,(((30:[&rate=0.6045561930275732]337.437316,17:[&rate=1.0190763352571934]337.437316):[&rate=1.4469883838723363]336.53160290000005,((27:[&rate=1.3993428273762558]225.09334519999993,26:[&rate=1.178039007111558]225.09334519999993):[&rate=1.8951618329269861]224.68825530000004,((44:[&rate=0.7712713392311671]150.08141410000007,43:[&rate=1.2073853030798671]150.08141410000007):[&rate=1.274383230474596]149.61222580000003,45:[&rate=0.8762150392533751]299.6936399000001):[&rate=1.3885404927986218]150.08796069999994):[&rate=0.662606541681788]224.1873184000001):[&rate=1.3885404927986218]336.3502807,(((((((8:[&rate=0.9505055329721191]70.25670938999997,1:[&rate=1.6458894392572057]70.25670938999997):[&rate=1.0826906041339468]70.49682005999989,6:[&rate=1.4343306954245885]140.75352939999993):[&rate=0.7566174706015534]71.19850133,((9:[&rate=0.6219814962104161]71.35180141000001,2:[&rate=1.705528039545931]71.35180141000001):[&rate=0.5276958098206523]68.29748046000009,5:[&rate=0.987796779709659]139.6492819):[&rate=0.8451027508368278]72.3027489000001):[&rate=0.5276958098206523]69.52320067000005,(76:[&rate=1.056322661694958]140.76183020000008,75:[&rate=0.5853043744612897]140.76183020000008):[&rate=1.6458894392572057]140.7134013):[&rate=0.8138744379883451]171.7610019000001,((((7:[&rate=0.9252871330712205]71.13345116999994,10:[&rate=1.1669045045770232]71.13345116999994):[&rate=1.1202878933137126]69.48321850999992,3:[&rate=1.0230970710690892]140.6166697000001):[&rate=0.987796779709659]70.39431424000009,4:[&rate=0.9916276565822592]211.01098389999993):[&rate=0.7998449097855745]69.41266821999989,(((((((96:[&rate=0.8138744379883451]36.05806770999993,93:[&rate=0.9005822083635051]36.05806770999993):[&rate=0.7183355977139615]32.2629450500001,(82:[&rate=0.96521772674156]35.913950429999886,84:[&rate=0.5634613392717592]35.913950429999886):[&rate=0.9040867723439322]32.40706232000002):[&rate=0.7183355977139615]37.15569200999994,(((((90:[&rate=0.8866278213911012]18.517445960000032,91:[&rate=1.5040821398637252]18.517445960000032):[&rate=1.5972701892257783]16.467511560000048,87:[&rate=0.9993535200250485]34.98495752000008):[&rate=0.9468645565752842]17.76275271999998,86:[&rate=0.9839863474645119]52.74771024000006):[&rate=0.9324321083889269]17.594207130000086,98:[&rate=1.537661495915463]70.34191736999992):[&rate=1.0353266514580333]16.560097049999968,(((83:[&rate=0.827794602847167]23.04717099000004,80:[&rate=1.4105509371677019]23.04717099000004):[&rate=0.8554665218572818]20.937197109999943,78:[&rate=0.5376296033861526]43.98436809999998):[&rate=0.7262254762124303]21.918071589999954,85:[&rate=1.1895046505923952]65.90243968999994):[&rate=1.1058216820576563]20.99957472999995):[&rate=1.5040821398637252]18.574690350000083):[&rate=1.2261818121129355]34.18755121999993,(((94:[&rate=1.2973426606225393]36.136642330000086,89:[&rate=0.8831526833295167]36.136642330000086):[&rate=0.6530670771397518]34.17884423999999,99:[&rate=0.555393644373968]70.31548657000008):[&rate=1.274383230474596]35.23641195000005,79:[&rate=0.7784952642756542]105.55189849999988):[&rate=1.1614535972720352]34.112357470000006):[&rate=1.178039007111558]35.18749937999996,((((95:[&rate=1.3396319780056916]35.22049539999989,92:[&rate=0.8658325536821742]35.22049539999989):[&rate=1.064959259816411]36.137656690000085,88:[&rate=1.0190763352571934]71.35815208999998):[&rate=0.7143373841550329]34.08934888999988,97:[&rate=1.267068611891558]105.44750099999987):[&rate=0.379121311068517]35.16761221999991,81:[&rate=0.9916276565822592]140.6151132):[&rate=0.8173630752400248]34.236642159999974):[&rate=1.1669045045770232]36.249903010000025,77:[&rate=0.8103789868206844]211.1016583999999):[&rate=1.6740149618464972]35.1893055999999,74:[&rate=0.68514285997654]246.29096400000003):[&rate=0.6937257421012678]34.13268816999994):[&rate=1.027145118128642]172.81258120000007):[&rate=0.7378216043535071]173.65134820000003,29:[&rate=1.252896282551182]626.8875816):[&rate=1.1154129600663671]172.94558499999994,((72:[&rate=1.3680314787699432]293.98808169999984,59:[&rate=0.6718263036239505]293.98808169999984):[&rate=0.8970845331445165]293.56980509999994,((((62:[&rate=0.8381875939828716]110.77500880000002,67:[&rate=1.5561184178227754]110.77500880000002):[&rate=1.4469883838723363]108.12359590000005,12:[&rate=0.7820849076258293]218.89860470000008):[&rate=0.9578308093174787]110.24096140000006,((63:[&rate=1.1560763967362104]110.83511479999993,66:[&rate=0.9541607571351569]110.83511479999993):[&rate=0.662606541681788]108.05758179999998,(14:[&rate=0.632822310579105]110.73843269999998,13:[&rate=0.7927752378153978]110.73843269999998):[&rate=0.730120939386693]108.15426389999993):[&rate=1.2392845328063673]110.2468695):[&rate=0.8347265431234593]129.82286350000004,(((((102:[&rate=0.9993535200250485]148.46843599999988,73:[&rate=2.373910338787501]148.46843599999988):[&rate=0.9993535200250485]146.78132159999996,((50:[&rate=0.5634613392717592]98.55240346999994,49:[&rate=1.575913607126489]98.55240346999994):[&rate=1.5203643922566334]98.60434138999995,61:[&rate=0.7262254762124303]197.15674489999992):[&rate=0.8554665218572818]98.0930127900001):[&rate=1.3307129673600027]40.105628889999934,((((38:[&rate=0.9360216032220797]67.08209375000001,16:[&rate=0.8451027508368278]67.08209375000001):[&rate=1.3053667558099957]66.41723580999997,((32:[&rate=1.2392845328063673]44.76650616000006,31:[&rate=1.0394619562091085]44.76650616000006):[&rate=1.3582721319286701]44.92549534,(52:[&rate=1.0918056643964034]45.910586960000046,53:[&rate=0.8935932445914184]45.910586960000046):[&rate=1.0190763352571934]43.78141452999989):[&rate=1.056322661694958]43.80732807000004):[&rate=1.7414009605406995]68.30894244000001,51:[&rate=0.9764241322401661]201.808272):[&rate=0.7183355977139615]67.19820948000006,((34:[&rate=0.7143373841550329]89.7745740800001,35:[&rate=1.3307129673600027]89.7745740800001):[&rate=0.8485579850372081]89.59109248000004,39:[&rate=0.6979390282939234]179.36566659999994):[&rate=0.9111185807515341]89.64081493000003):[&rate=0.9396231476844148]66.34890504999998):[&rate=1.2599088609433275]41.470108799999934,58:[&rate=1.47410457160128]376.82549530000006):[&rate=0.6481625884644129]41.13276629999996,24:[&rate=0.8416461403361489]417.9582616):[&rate=0.8138744379883451]41.004167929999994):[&rate=0.8935932445914184]128.59545720000006):[&rate=1.8951618329269861]212.27527970000006):[&rate=0.6578795985083873]210.4860331):[&rate=1.3781126495332612]212.35393450000015):[&rate=0.6763291724627228]210.93077379999977,54:[&rate=0.9615162693915588]1433.6039084):[&rate=0.8970845331445165]211.73914930000024):[&rate=1.4469883838723363]209.4305056999999);

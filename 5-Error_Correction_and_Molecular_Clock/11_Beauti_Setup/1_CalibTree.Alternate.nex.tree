@@ -1,0 +1,227 @@
+#NEXUS
+[R-package APE, Thu Sep  7 17:25:09 2023]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 107;
+	TAXLABELS
+		Heterocapsa_rotundata_Myzozoa_Dinophyceae_HBLO01013759.1.p2_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ
+		Symbiodinium_cladeA_Myzozoa_Dinophyceae_HBSZ01069737.1.p1_OUTGROUP_sp_Q9LM02_SMT1_ARATH
+		Aureococcus_anophagefferens_Pelagophyceae_Pelagophyceae_XP_009037888.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH
+		Symbiodinium_cladeD_Myzozoa_Dinophyceae_HBTB01063121.1.p3_OUTGROUP_Capsaspora-XP_004346937.1
+		Odontella_aurita_Bacillariophyta_Coscinodiscophyceae_GHBW01054489.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ
+		Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_177736.1_OUTGROUP_sp_Q94JS4_SMT3B_ARATH
+		Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_173458.1_OUTGROUP_sp_Q39227_SMT2_ARATH
+		Physcomitrium_patens_Streptophyta_Bryopsida_XP_024401461.1_OUTGROUP_sp_Q39227_SMT2_ARATH
+		Volvox_carteri_Chlorophyta_Chlorophyceae_XP_002948023.1_OUTGROUP_sp_H2E7T5_SQMT1_BOTBR
+		Chlamydomonas_reinhardtii_Chlorophyta_Chlorophyceae_XP_042918289.1_OUTGROUP_sp_Q94JS4_SMT3B_ARATH
+		Emiliania_huxleyi_Haptista_Haptophyta_XP_005767411.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH
+		Guillardia_theta_Cryptophyceae_Cryptophyceae_XP_005841951.1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ
+		Heterocapsa_rotundata_Myzozoa_Dinophyceae_HBMF01019534.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ
+		Karenia_mikimotoi_Myzozoa_Dinophyceae_GHKS01101508.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ
+		Thalassiosira_pseudonana_Bacillariophyta_Coscinodiscophyceae_XP_002287743.1_OUTGROUP_Capsaspora-XP_004346937.1
+		Aureococcus_anophagefferens_Pelagophyceae_Pelagophyceae_XP_009034460.1_OUTGROUP_Capsaspora-XP_004346937.1
+		Thalassiosira_pseudonana_Bacillariophyta_Coscinodiscophyceae_XP_002292358.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH
+		Grammatophora_oceanica_Ochrophyta_Bacillariophyceae_HBGK01020065.1.p1_OUTGROUP_sp_Q9LM02_SMT1_ARATH
+		Physcomitrium_patens_Streptophyta_Bryopsida_XP_024395494.1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ
+		Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_001078579.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH
+		Puccinia_graminis_Basidiomycota_Pucciniomycetes_XP_003335809.1_OUTGROUP_sp_Q6CYB3_ERG6_KLULA
+		Puccinia_graminis_Basidiomycota_Pucciniomycetes_XP_003321161.1_OUTGROUP_sp_O14321_ERG6_SCHPO
+		Saccharomyces_cerevisiae_Ascomycota_Saccharomycetes_NP_013706.1_OUTGROUP_sp_P25087_ERG6_YEAST
+		Haliclona_tubifera_Porifera_Demospongiae_GFAV01007619.1_p1_Amphimedon-XP_003387525.1
+		Amphimedon_queenslandica_Porifera_Demospongiae_XP_003387525.1_Amphimedon-XP_003387525.1
+		Neopetrosia_compacta_Porifera_Demospongiae_GIYW01054291.1_p1_Amphimedon-XP_003387525.1
+		Neopetrosia_compacta_Porifera_Demospongiae_GIYW01007509.1_p1_Amphimedon-XP_003387525.1
+		Dysidea_avara_Porifera_Demospongiae_HANJ01129280.1_p1_Amphimedon-XP_003387525.1
+		Aplysina_aerophoba_Porifera_Demospongiae_HANI01212487.1_p1_Amphimedon-XP_003387525.1
+		Cymbastela_stipitata_Porifera_Demospongiae_GHWA01019169.1_p1_Amphimedon-XP_003387525.1
+		Cymbastela_stipitata_Porifera_Demospongiae_GHWA01019168.1_p1_Amphimedon-XP_003387525.1
+		Halisarca_caerulea_Porifera_Demospongiae_GFTQ01234321.1_p1_Amphimedon-XP_003387525.1
+		Halisarca_caerulea_Porifera_Demospongiae_GFSI01014458.1_p1_Amphimedon-XP_003387525.1
+		Halisarca_dujardinii_Porifera_Demospongiae_GIFI01118229.1_p1_Amphimedon-XP_003387525.1
+		Porites_astreoides_Cnidaria_Anthozoa_GEHP01154325.1_p1_Orbicella-XP_020604180.1
+		Porites_australiensis_Cnidaria_Anthozoa_FX438716.1_p1_Orbicella-XP_020604180.1
+		Astroides_calycularis_Cnidaria_Anthozoa_GIRZ01004252.1_p1_Orbicella-XP_020604180.1
+		Siderastrea_siderea_Cnidaria_Anthozoa_GIYO011042706.1_p1_Orbicella-XP_020604180.1
+		Cyphastrea_serailia_Cnidaria_Anthozoa_GETH01048109.1_p1_Orbicella-XP_020604180.1_No_SMT
+		Orbicella_faveolata_Cnidaria_Anthozoa_XP_020604180.1_Orbicella-XP_020604180.1_No_SMT
+		Favites_colemani_Cnidaria_Anthozoa_GIVN01046627.1_p1_Orbicella-XP_020604180.1
+		Agaricia_lamarcki_Cnidaria_Anthozoa_GGLC03100559.1_p1_Orbicella-XP_020604180.1
+		Galaxea_fascicularis_Cnidaria_Anthozoa_GFAZ01104046.1_p1_Orbicella-XP_020604180.1
+		Adineta_vaga_Rotifera_Bdelloidea_UJR21766.1_Rotaria-CAF1633859.1
+		Adineta_ricciae_Rotifera_Bdelloidea_CAF0720147.1_Rotaria-CAF1633859.1
+		Adineta_steineri_Rotifera_Bdelloidea_CAF0954912.1_Rotaria-CAF1633859.1
+		Adineta_vaga_Rotifera_Bdelloidea_UJR27730.1_Adineta-CAF0879466.1
+		Adineta_ricciae_Rotifera_Bdelloidea_CAF0745749.1_Adineta-CAF0879466.1
+		Adineta_steineri_Rotifera_Bdelloidea_CAF0879466.1_Adineta-CAF0879466.1
+		Rotaria_socialis_Rotifera_Bdelloidea_CAF3083896.1_Adineta-CAF0879466.1
+		Rotaria_magnacalcarata_Rotifera_Eurotatoria_GDRE01028107.1_p1_Adineta-CAF0879466.1
+		Adineta_vaga_Rotifera_Bdelloidea_UJR08966.1_Adineta-CAF0879466.1
+		Adineta_vaga_Rotifera_Bdelloidea_UJR38736.1_Adineta-CAF0879466.1
+		Adineta_ricciae_Rotifera_Eurotatoria_HE709170.1_p1_Adineta-CAF0879466.1
+		Adineta_steineri_Rotifera_Bdelloidea_CAF0863447.1_Adineta-CAF0879466.1
+		Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF3269535.1_Adineta-CAF0879466.1
+		Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2875610.1_Adineta-CAF0879466.1
+		Rotaria_sordida_Rotifera_Bdelloidea_CAF1085230.1_Adineta-CAF0879466.1
+		Rotaria_sordida_Rotifera_Bdelloidea_CAF1191339.1_Adineta-CAF0879466.1
+		Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF4849145.1_Rotaria-CAF1633859.1
+		Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF4985574.1_Rotaria-CAF1633859.1
+		Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1093334.1_Adineta-CAF0879466.1_No_SMT
+		Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF0831015.1_Adineta-CAF0879466.1
+		Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01047653.1_p1_Adineta-CAF0879466.1
+		Rotaria_sordida_Rotifera_Bdelloidea_CAF1125665.1_Rotaria-CAF1633859.1
+		Rotaria_sordida_Rotifera_Bdelloidea_CAF0741383.1_Adineta-CAF0879466.1
+		Rotaria_sordida_Rotifera_Bdelloidea_CAF0735460.1_Adineta-CAF0879466.1
+		Rotaria_sordida_Rotifera_Eurotatoria_GDRH01034451.1_p1_Adineta-CAF0879466.1
+		Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2909852.1_Rotaria-CAF1633859.1
+		Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1249985.1_Adineta-CAF0879466.1
+		Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01047656.1_p1_Adineta-CAF0879466.1_No_SMT
+		Rotaria_sordida_Rotifera_Bdelloidea_CAF0738991.1_Adineta-CAF0879466.1
+		Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF3020934.1_Adineta-CAF0879466.1
+		Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2421095.1_Adineta-CAF0879466.1
+		Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1185023.1_Adineta-CAF0879466.1
+		Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01008626.1_p1_Rotaria-CAF1633859.1
+		Rotaria_sordida_Rotifera_Bdelloidea_CAF0946149.1_Adineta-CAF0879466.1
+		Rotaria_socialis_Rotifera_Eurotatoria_GDRD01030257.1_p1_Rotaria-CAF1633859.1
+		Rotaria_magnacalcarata_Rotifera_Bdelloidea_CAF0976128.1_Rotaria-CAF1633859.1
+		Didymodactylos_carnosus_Rotifera_Bdelloidea_CAF0954097.1_Adineta-CAF0879466.1
+		Pygospio_elegans_Annelida_Polychaeta_GFPL01001539.1_p1_Capitella-ELU07827.1
+		Ophryotrocha_diadema_Annelida_Polychaeta_GENQ01004874.1_p1_Capitella-ELU07827.1
+		Perinereis_aibuhitensis_Annelida_Polychaeta_GDAF01010172.1_p1_Capsaspora-XP_004346937.1
+		Platynereis_dumerilii_Annelida_Polychaeta_HALR01261698.1_p1_Capitella-ELU07827.1
+		Alitta_virens_Annelida_Polychaeta_GINI01005303.1_p1_Capsaspora-XP_004346937.1
+		Perinereis_aibuhitensis_Annelida_Polychaeta_GDAF01019697.1_p1_Capitella-ELU07827.1
+		Platynereis_dumerilii_Annelida_Polychaeta_HALR01229039.1_p1_Capitella-ELU07827.1
+		Alitta_virens_Annelida_Polychaeta_GINI01095864.1_p1_Capitella-ELU07827.1
+		Alitta_virens_Annelida_Polychaeta_GINI01069748.1_p1_Capitella-ELU07827.1
+		Spirobranchus_lamarcki_Annelida_Polychaeta_GGGS01270992.1_p1_Capitella-ELU07827.1
+		Romanchella_perrieri_Annelida_Polychaeta_HBVW01010218.1_p1_Capitella-ELU07827.1
+		Lamellibrachia_satsuma_Annelida_Polychaeta_KAI0241948.1_Capitella-ELU07827.1
+		Lamellibrachia_luymesi_Annelida_Polychaeta_FUN_033246-T1_Capitella-ELU07827.1
+		Paraescarpia_echinospica_Annelida_Polychaeta_GHDM01076229.1_p1_Capitella-ELU07827.1
+		Glossoscolex_paulistus_Annelida_Clitellata_GBIL01031091.1_p1_Capitella-ELU07827.1
+		Amynthas_gracilis_Annelida_Clitellata_GIKF01022106.1_p2_Capitella-ELU07827.1
+		Eisenia_fetida_Annelida_Clitellata_GIKG01135343.1_p1_Capitella-ELU07827.1
+		Eisenia_fetida_Annelida_Clitellata_GIKG01031241.1_p2_Capitella-ELU07827.1
+		Lumbricus_castaneus_Annelida_Clitellata_GGRB01015146.1_p1_Capitella-ELU07827.1
+		Lumbricus_rubellus_Annelida_Clitellata_GIKI01063526.1_p1_Capitella-ELU07827.1
+		Lumbriculus_variegatus_Annelida_Polychaeta_GIWA01114918.1_p1_Capitella-ELU07827.1
+		Enchytraeus_albidus_Annelida_Polychaeta_GJSG01022432.1_p1_Capitella-ELU07827.1
+		Enchytraeus_crypticus_Annelida_Clitellata_GALF01010111.1_p1_Capitella-ELU07827.1
+		Glossoscolex_paulistus_Annelida_Clitellata_GBIL01037864.1_p1_Capitella-ELU07827.1
+		Olavius_algarvensis_Annelida_Clitellata_HACZ01051716.1_p1_Capitella-ELU07827.1_No_SMT
+		Capitella_teleta_Annelida_Polychaeta_ELU07827.1_Capitella-ELU07827.1
+		Monosiga_brevicollis_Choanoflagellata_Choanoflagellata_XP_001748534.1_OUTGROUP_Capsaspora-XP_004346937.1
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Heterocapsa_rotundata_Myzozoa_Dinophyceae_HBLO01013759.1.p2_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ,
+		2	Symbiodinium_cladeA_Myzozoa_Dinophyceae_HBSZ01069737.1.p1_OUTGROUP_sp_Q9LM02_SMT1_ARATH,
+		3	Aureococcus_anophagefferens_Pelagophyceae_Pelagophyceae_XP_009037888.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH,
+		4	Symbiodinium_cladeD_Myzozoa_Dinophyceae_HBTB01063121.1.p3_OUTGROUP_Capsaspora-XP_004346937.1,
+		5	Odontella_aurita_Bacillariophyta_Coscinodiscophyceae_GHBW01054489.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ,
+		6	Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_177736.1_OUTGROUP_sp_Q94JS4_SMT3B_ARATH,
+		7	Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_173458.1_OUTGROUP_sp_Q39227_SMT2_ARATH,
+		8	Physcomitrium_patens_Streptophyta_Bryopsida_XP_024401461.1_OUTGROUP_sp_Q39227_SMT2_ARATH,
+		9	Volvox_carteri_Chlorophyta_Chlorophyceae_XP_002948023.1_OUTGROUP_sp_H2E7T5_SQMT1_BOTBR,
+		10	Chlamydomonas_reinhardtii_Chlorophyta_Chlorophyceae_XP_042918289.1_OUTGROUP_sp_Q94JS4_SMT3B_ARATH,
+		11	Emiliania_huxleyi_Haptista_Haptophyta_XP_005767411.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH,
+		12	Guillardia_theta_Cryptophyceae_Cryptophyceae_XP_005841951.1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ,
+		13	Heterocapsa_rotundata_Myzozoa_Dinophyceae_HBMF01019534.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ,
+		14	Karenia_mikimotoi_Myzozoa_Dinophyceae_GHKS01101508.1.p1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ,
+		15	Thalassiosira_pseudonana_Bacillariophyta_Coscinodiscophyceae_XP_002287743.1_OUTGROUP_Capsaspora-XP_004346937.1,
+		16	Aureococcus_anophagefferens_Pelagophyceae_Pelagophyceae_XP_009034460.1_OUTGROUP_Capsaspora-XP_004346937.1,
+		17	Thalassiosira_pseudonana_Bacillariophyta_Coscinodiscophyceae_XP_002292358.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH,
+		18	Grammatophora_oceanica_Ochrophyta_Bacillariophyceae_HBGK01020065.1.p1_OUTGROUP_sp_Q9LM02_SMT1_ARATH,
+		19	Physcomitrium_patens_Streptophyta_Bryopsida_XP_024395494.1_OUTGROUP_sp_Q6ZIX2_SMT1_ORYSJ,
+		20	Arabidopsis_thaliana_Streptophyta_Magnoliopsida_NP_001078579.1_OUTGROUP_sp_Q9LM02_SMT1_ARATH,
+		21	Puccinia_graminis_Basidiomycota_Pucciniomycetes_XP_003335809.1_OUTGROUP_sp_Q6CYB3_ERG6_KLULA,
+		22	Puccinia_graminis_Basidiomycota_Pucciniomycetes_XP_003321161.1_OUTGROUP_sp_O14321_ERG6_SCHPO,
+		23	Saccharomyces_cerevisiae_Ascomycota_Saccharomycetes_NP_013706.1_OUTGROUP_sp_P25087_ERG6_YEAST,
+		24	Haliclona_tubifera_Porifera_Demospongiae_GFAV01007619.1_p1_Amphimedon-XP_003387525.1,
+		25	Amphimedon_queenslandica_Porifera_Demospongiae_XP_003387525.1_Amphimedon-XP_003387525.1,
+		26	Neopetrosia_compacta_Porifera_Demospongiae_GIYW01054291.1_p1_Amphimedon-XP_003387525.1,
+		27	Neopetrosia_compacta_Porifera_Demospongiae_GIYW01007509.1_p1_Amphimedon-XP_003387525.1,
+		28	Dysidea_avara_Porifera_Demospongiae_HANJ01129280.1_p1_Amphimedon-XP_003387525.1,
+		29	Aplysina_aerophoba_Porifera_Demospongiae_HANI01212487.1_p1_Amphimedon-XP_003387525.1,
+		30	Cymbastela_stipitata_Porifera_Demospongiae_GHWA01019169.1_p1_Amphimedon-XP_003387525.1,
+		31	Cymbastela_stipitata_Porifera_Demospongiae_GHWA01019168.1_p1_Amphimedon-XP_003387525.1,
+		32	Halisarca_caerulea_Porifera_Demospongiae_GFTQ01234321.1_p1_Amphimedon-XP_003387525.1,
+		33	Halisarca_caerulea_Porifera_Demospongiae_GFSI01014458.1_p1_Amphimedon-XP_003387525.1,
+		34	Halisarca_dujardinii_Porifera_Demospongiae_GIFI01118229.1_p1_Amphimedon-XP_003387525.1,
+		35	Porites_astreoides_Cnidaria_Anthozoa_GEHP01154325.1_p1_Orbicella-XP_020604180.1,
+		36	Porites_australiensis_Cnidaria_Anthozoa_FX438716.1_p1_Orbicella-XP_020604180.1,
+		37	Astroides_calycularis_Cnidaria_Anthozoa_GIRZ01004252.1_p1_Orbicella-XP_020604180.1,
+		38	Siderastrea_siderea_Cnidaria_Anthozoa_GIYO011042706.1_p1_Orbicella-XP_020604180.1,
+		39	Cyphastrea_serailia_Cnidaria_Anthozoa_GETH01048109.1_p1_Orbicella-XP_020604180.1_No_SMT,
+		40	Orbicella_faveolata_Cnidaria_Anthozoa_XP_020604180.1_Orbicella-XP_020604180.1_No_SMT,
+		41	Favites_colemani_Cnidaria_Anthozoa_GIVN01046627.1_p1_Orbicella-XP_020604180.1,
+		42	Agaricia_lamarcki_Cnidaria_Anthozoa_GGLC03100559.1_p1_Orbicella-XP_020604180.1,
+		43	Galaxea_fascicularis_Cnidaria_Anthozoa_GFAZ01104046.1_p1_Orbicella-XP_020604180.1,
+		44	Adineta_vaga_Rotifera_Bdelloidea_UJR21766.1_Rotaria-CAF1633859.1,
+		45	Adineta_ricciae_Rotifera_Bdelloidea_CAF0720147.1_Rotaria-CAF1633859.1,
+		46	Adineta_steineri_Rotifera_Bdelloidea_CAF0954912.1_Rotaria-CAF1633859.1,
+		47	Adineta_vaga_Rotifera_Bdelloidea_UJR27730.1_Adineta-CAF0879466.1,
+		48	Adineta_ricciae_Rotifera_Bdelloidea_CAF0745749.1_Adineta-CAF0879466.1,
+		49	Adineta_steineri_Rotifera_Bdelloidea_CAF0879466.1_Adineta-CAF0879466.1,
+		50	Rotaria_socialis_Rotifera_Bdelloidea_CAF3083896.1_Adineta-CAF0879466.1,
+		51	Rotaria_magnacalcarata_Rotifera_Eurotatoria_GDRE01028107.1_p1_Adineta-CAF0879466.1,
+		52	Adineta_vaga_Rotifera_Bdelloidea_UJR08966.1_Adineta-CAF0879466.1,
+		53	Adineta_vaga_Rotifera_Bdelloidea_UJR38736.1_Adineta-CAF0879466.1,
+		54	Adineta_ricciae_Rotifera_Eurotatoria_HE709170.1_p1_Adineta-CAF0879466.1,
+		55	Adineta_steineri_Rotifera_Bdelloidea_CAF0863447.1_Adineta-CAF0879466.1,
+		56	Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF3269535.1_Adineta-CAF0879466.1,
+		57	Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2875610.1_Adineta-CAF0879466.1,
+		58	Rotaria_sordida_Rotifera_Bdelloidea_CAF1085230.1_Adineta-CAF0879466.1,
+		59	Rotaria_sordida_Rotifera_Bdelloidea_CAF1191339.1_Adineta-CAF0879466.1,
+		60	Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF4849145.1_Rotaria-CAF1633859.1,
+		61	Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF4985574.1_Rotaria-CAF1633859.1,
+		62	Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1093334.1_Adineta-CAF0879466.1_No_SMT,
+		63	Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF0831015.1_Adineta-CAF0879466.1,
+		64	Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01047653.1_p1_Adineta-CAF0879466.1,
+		65	Rotaria_sordida_Rotifera_Bdelloidea_CAF1125665.1_Rotaria-CAF1633859.1,
+		66	Rotaria_sordida_Rotifera_Bdelloidea_CAF0741383.1_Adineta-CAF0879466.1,
+		67	Rotaria_sordida_Rotifera_Bdelloidea_CAF0735460.1_Adineta-CAF0879466.1,
+		68	Rotaria_sordida_Rotifera_Eurotatoria_GDRH01034451.1_p1_Adineta-CAF0879466.1,
+		69	Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2909852.1_Rotaria-CAF1633859.1,
+		70	Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1249985.1_Adineta-CAF0879466.1,
+		71	Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01047656.1_p1_Adineta-CAF0879466.1_No_SMT,
+		72	Rotaria_sordida_Rotifera_Bdelloidea_CAF0738991.1_Adineta-CAF0879466.1,
+		73	Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF3020934.1_Adineta-CAF0879466.1,
+		74	Rotaria_sp.Silwood2_Rotifera_Bdelloidea_CAF2421095.1_Adineta-CAF0879466.1,
+		75	Rotaria_sp.Silwood1_Rotifera_Bdelloidea_CAF1185023.1_Adineta-CAF0879466.1,
+		76	Rotaria_tardigrada_Rotifera_Eurotatoria_GDRK01008626.1_p1_Rotaria-CAF1633859.1,
+		77	Rotaria_sordida_Rotifera_Bdelloidea_CAF0946149.1_Adineta-CAF0879466.1,
+		78	Rotaria_socialis_Rotifera_Eurotatoria_GDRD01030257.1_p1_Rotaria-CAF1633859.1,
+		79	Rotaria_magnacalcarata_Rotifera_Bdelloidea_CAF0976128.1_Rotaria-CAF1633859.1,
+		80	Didymodactylos_carnosus_Rotifera_Bdelloidea_CAF0954097.1_Adineta-CAF0879466.1,
+		81	Pygospio_elegans_Annelida_Polychaeta_GFPL01001539.1_p1_Capitella-ELU07827.1,
+		82	Ophryotrocha_diadema_Annelida_Polychaeta_GENQ01004874.1_p1_Capitella-ELU07827.1,
+		83	Perinereis_aibuhitensis_Annelida_Polychaeta_GDAF01010172.1_p1_Capsaspora-XP_004346937.1,
+		84	Platynereis_dumerilii_Annelida_Polychaeta_HALR01261698.1_p1_Capitella-ELU07827.1,
+		85	Alitta_virens_Annelida_Polychaeta_GINI01005303.1_p1_Capsaspora-XP_004346937.1,
+		86	Perinereis_aibuhitensis_Annelida_Polychaeta_GDAF01019697.1_p1_Capitella-ELU07827.1,
+		87	Platynereis_dumerilii_Annelida_Polychaeta_HALR01229039.1_p1_Capitella-ELU07827.1,
+		88	Alitta_virens_Annelida_Polychaeta_GINI01095864.1_p1_Capitella-ELU07827.1,
+		89	Alitta_virens_Annelida_Polychaeta_GINI01069748.1_p1_Capitella-ELU07827.1,
+		90	Spirobranchus_lamarcki_Annelida_Polychaeta_GGGS01270992.1_p1_Capitella-ELU07827.1,
+		91	Romanchella_perrieri_Annelida_Polychaeta_HBVW01010218.1_p1_Capitella-ELU07827.1,
+		92	Lamellibrachia_satsuma_Annelida_Polychaeta_KAI0241948.1_Capitella-ELU07827.1,
+		93	Lamellibrachia_luymesi_Annelida_Polychaeta_FUN_033246-T1_Capitella-ELU07827.1,
+		94	Paraescarpia_echinospica_Annelida_Polychaeta_GHDM01076229.1_p1_Capitella-ELU07827.1,
+		95	Glossoscolex_paulistus_Annelida_Clitellata_GBIL01031091.1_p1_Capitella-ELU07827.1,
+		96	Amynthas_gracilis_Annelida_Clitellata_GIKF01022106.1_p2_Capitella-ELU07827.1,
+		97	Eisenia_fetida_Annelida_Clitellata_GIKG01135343.1_p1_Capitella-ELU07827.1,
+		98	Eisenia_fetida_Annelida_Clitellata_GIKG01031241.1_p2_Capitella-ELU07827.1,
+		99	Lumbricus_castaneus_Annelida_Clitellata_GGRB01015146.1_p1_Capitella-ELU07827.1,
+		100	Lumbricus_rubellus_Annelida_Clitellata_GIKI01063526.1_p1_Capitella-ELU07827.1,
+		101	Lumbriculus_variegatus_Annelida_Polychaeta_GIWA01114918.1_p1_Capitella-ELU07827.1,
+		102	Enchytraeus_albidus_Annelida_Polychaeta_GJSG01022432.1_p1_Capitella-ELU07827.1,
+		103	Enchytraeus_crypticus_Annelida_Clitellata_GALF01010111.1_p1_Capitella-ELU07827.1,
+		104	Glossoscolex_paulistus_Annelida_Clitellata_GBIL01037864.1_p1_Capitella-ELU07827.1,
+		105	Olavius_algarvensis_Annelida_Clitellata_HACZ01051716.1_p1_Capitella-ELU07827.1_No_SMT,
+		106	Capitella_teleta_Annelida_Polychaeta_ELU07827.1_Capitella-ELU07827.1,
+		107	Monosiga_brevicollis_Choanoflagellata_Choanoflagellata_XP_001748534.1_OUTGROUP_Capsaspora-XP_004346937.1
+	;
+	TREE * UNTITLED = [&R] ((((((1:269.1220152,2:269.1220152):267.2095016,3:536.3315168):270.2870739,(4:402.7837399,5:402.7837399):403.8348507):267.8800424,(((6:225.7167652,7:225.7167652):222.8670861,8:448.5838514):313.4511559,(9:381.2244839,10:381.2244839):380.8105233):312.4636258):411.8832577,(((11:225.542401,12:225.542401):423.5919425,((13:217.4128773,14:217.4128773):214.9740506,((15:144.5671305,16:144.5671305):144.033241,(17:145.0575979,18:145.0575979):143.5427736):143.7865564):216.7474156):425.6776687,(19:449.0987181,20:449.0987181):625.7132942):411.5698784):411.3843008,(((21:219.7295046,22:219.7295046):220.4712223,23:440.2007269):1240.974855,(((((24:34.6798371,25:34.6798371):33.18139799,(26:34.088523,27:34.088523):33.7727121):587.43556,((28:219.097452,29:219.097452):218.1913642,((30:146.200025,31:146.200025):145.7951583,((32:97.48558649,33:97.48558649):97.01644802,34:194.5020345):97.49314886):145.2936329):218.0079788):588.3951433,(((((35:123.5775886,36:123.5775886):126.6884911,37:250.2660797):123.5427233,38:373.808803):122.9080647,((((39:100.5392036,40:100.5392036):98.83252473,41:199.3717283):99.69600258,42:299.0677309):99.65106874,43:398.7187997):97.99806801):529.1667944,(((((((44:70.25635415,45:70.25635415):70.49718572,46:140.7535399):71.20097864,((47:71.35473956,48:71.35473956):68.29123128,49:139.6459708):72.30854767):69.52074092,(50:140.7618665,51:140.7618665):140.7133929):174.1464197,((((52:71.13573273,53:71.13573273):69.48053419,54:140.6162669):70.39437346,55:211.0106404):69.40990158,(((((((56:36.06066475,57:36.06066475):32.25422021,(58:35.91611721,59:35.91611721):32.39876775):37.16160344,(((((60:18.52015976,61:18.52015976):16.46420012,62:34.98435989):17.76324933,63:52.74760921):17.59420392,64:70.34181314):16.55705469,(((65:23.0502922,66:23.0502922):20.93407957,67:43.98437176):21.91784313,68:65.9022149):20.99665293):18.57762058):34.18452668,(((69:36.13947703,70:36.13947703):34.17583147,71:70.31530849):35.23655809,72:105.5518666):34.1091485):35.18749993,((((73:35.22059386,74:35.22059386):36.140493,75:71.36108686):34.0860696,76:105.4471565):35.1675483,77:140.6147048):34.23381024):36.25307259,78:211.1015876):35.18931066,79:246.2908983):34.12964371):175.2011372):176.0427489,80:631.6644281):174.7769802,((81:293.987064,82:293.987064):293.5675607,((((83:110.777346,84:110.777346):108.1179376,85:218.8952836):110.2416891,((86:110.8376327,87:110.8376327):108.051727,(88:110.7406593,89:110.7406593):108.1487004):110.247613):129.8243921,(((((90:148.4706052,91:148.4706052):146.77837,((92:98.55256146,93:98.55256146):98.60465611,94:197.1572176):98.09175766):40.10309896,((((95:67.08146536,96:67.08146536):66.4146203,((97:44.76622409,98:44.76622409):44.9256891,(99:45.91373213,100:45.91373213):43.77818106):43.80417247):68.31198814,101:201.8080738):67.19792508,((102:89.77473373,103:89.77473373):89.59069925,104:179.365433):89.64056591):66.34607529):41.47165064,105:376.8237248):41.13329326,106:417.9570181):41.00434672):128.5932599):218.8867835):219.4422539):217.8082762):218.5767735,107:1462.268712):218.9068705):216.5906092);
+END;
